@@ -11,7 +11,7 @@ URl: http://www.schirmacher.de/arne/dvgrab/index_e.html
 Group: Video
 Source0: http://kino.schirmacher.de/filemanager/download/43/%name-%version.tar.bz2
 Buildroot: %_tmppath/%name-buildroot
-BuildRequires: libraw1394-devel libavc1394-devel
+BuildRequires: libraw1394-devel libavc1394-devel libiec61883-devel
 BuildRequires: libdv-devel libquicktime-devel
 BuildRequires: jpeg-devel
 
