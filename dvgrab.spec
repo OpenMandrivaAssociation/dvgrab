@@ -1,5 +1,5 @@
 %define name dvgrab
-%define version 2.1
+%define version 3.0
 %define release %mkrel 1
 
 Summary: DV grabber through the FireWire interface
@@ -7,19 +7,17 @@ Name: %name
 Version: %version
 Release: %release
 License: GPL
-URl: http://www.schirmacher.de/arne/dvgrab/index_e.html
+URl: http://www.kinodv.org/
 Group: Video
-Source0: http://kino.schirmacher.de/filemanager/download/43/%name-%version.tar.bz2
+Source0: %name-%version.tar.bz2
 Buildroot: %_tmppath/%name-buildroot
 BuildRequires: libraw1394-devel libavc1394-devel libiec61883-devel
 BuildRequires: libdv-devel libquicktime-devel
 BuildRequires: jpeg-devel
 
 %description
-Dvgrab is a command line driven soft that grab AVI-2 films from a DV camera
-using the IEEE-1394 bus (aka FireWire).
-DV stand for Digital Video and is the name of the new numeric camera
-generation.
+Dvgrab is a small utility that grabs AVI-2 video from a DV camera using the
+IEEE-1394 bus (aka FireWire).
 
 %prep
 %setup -q 
