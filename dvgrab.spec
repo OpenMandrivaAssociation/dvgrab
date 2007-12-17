@@ -10,7 +10,6 @@ License: GPL
 URl: http://www.kinodv.org/
 Group: Video
 Source0: %name-%version.tar.bz2
-Buildroot: %_tmppath/%name-buildroot
 BuildRequires: libraw1394-devel libavc1394-devel libiec61883-devel
 BuildRequires: libdv-devel libquicktime-devel
 BuildRequires: jpeg-devel
