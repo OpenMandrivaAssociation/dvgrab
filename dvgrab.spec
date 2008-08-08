@@ -1,15 +1,15 @@
 %define name dvgrab
-%define version 3.1
-%define release %mkrel 2
+%define version 3.2
+%define release %mkrel 1
 
 Summary: DV grabber through the FireWire interface
 Name: %name
 Version: %version
 Release: %release
-License: GPL
+License: GPLv2+
 URl: http://www.kinodv.org/
 Group: Video
-Source0: %name-%version.tar.bz2
+Source0: :http://prdownloads.sourceforge.net/kino/%{name}-%{version}.tar.gz
 Buildroot: %_tmppath/%name-buildroot
 BuildRequires: libraw1394-devel libavc1394-devel libiec61883-devel
 BuildRequires: libdv-devel libquicktime-devel
