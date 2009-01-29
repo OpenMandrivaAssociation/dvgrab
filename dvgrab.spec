@@ -1,5 +1,5 @@
 %define name dvgrab
-%define version 3.2
+%define version 3.3
 %define release %mkrel 1
 
 Summary: DV grabber through the FireWire interface
@@ -9,7 +9,7 @@ Release: %release
 License: GPLv2+
 URl: http://www.kinodv.org/
 Group: Video
-Source0: :http://prdownloads.sourceforge.net/kino/%{name}-%{version}.tar.gz
+Source0: http://prdownloads.sourceforge.net/kino/%{name}-%{version}.tar.gz
 Buildroot: %_tmppath/%name-buildroot
 BuildRequires: libraw1394-devel libavc1394-devel libiec61883-devel
 BuildRequires: libdv-devel libquicktime-devel
@@ -29,7 +29,7 @@ perl -p -i -e 's/quicktime\/quicktime.h/lqt\/quicktime.h/g' filehandler.h
 
 %install
 rm -fr $RPM_BUILD_ROOT
-%makeinstall
+%makeinstall_std
 
 %clean
 rm -rf $RPM_BUILD_ROOT
