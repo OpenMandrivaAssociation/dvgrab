@@ -1,6 +1,6 @@
 %define name dvgrab
 %define version 3.5
-%define release %mkrel 3
+%define release %mkrel 4
 
 Summary: DV grabber through the FireWire interface
 Name: %name
