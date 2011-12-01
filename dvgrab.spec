@@ -28,11 +28,11 @@ perl -p -i -e 's/quicktime\/quicktime.h/lqt\/quicktime.h/g' filehandler.h
 %make
 
 %install
-rm -fr $RPM_BUILD_ROOT
+rm -fr %{buildroot}
 %makeinstall_std
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
