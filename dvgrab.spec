@@ -6,7 +6,8 @@ License:	GPLv2+
 Group:		Video
 Url:		http://www.kinodv.org/
 Source0:	http://prdownloads.sourceforge.net/kino/%{name}-%{version}.tar.gz
-
+# https://github.com/ddennedy/dvgrab/commit/8dd729f2cf4cc5b99ad2e3961419cf71d2dfb843.patch
+Patch0:  dvgrab-gcc6.patch
 BuildRequires:	jpeg-devel
 BuildRequires:	pkgconfig(libavc1394)
 BuildRequires:	pkgconfig(libdv)
@@ -19,15 +20,16 @@ Dvgrab is a small utility that grabs AVI-2 video from a DV camera using the
 IEEE-1394 bus (aka FireWire).
 
 %prep
-%setup -q
+%autosetup -p1
 sed -i -e 's/quicktime\/quicktime.h/lqt\/quicktime.h/g' filehandler.h
 
 %build
-%configure2_5x
-%make
+autoreconf -fi
+%configure
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc AUTHORS ChangeLog README TODO
