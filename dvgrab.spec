@@ -1,4 +1,4 @@
-%global build_ldflags %{build_ldflags} -lz
+%global build_ldflags %{build_ldflags} -lZ
 
 Summary:	DV grabber through the FireWire interface
 Name:		dvgrab
