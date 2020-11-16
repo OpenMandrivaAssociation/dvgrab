@@ -1,5 +1,3 @@
-%global build_ldflags %{build_ldflags} -lZ
-
 Summary:	DV grabber through the FireWire interface
 Name:		dvgrab
 Version:	3.5
@@ -16,6 +14,7 @@ BuildRequires:	pkgconfig(libdv)
 BuildRequires:	pkgconfig(libiec61883)
 BuildRequires:	pkgconfig(libquicktime)
 BuildRequires:	pkgconfig(libraw1394)
+BuildRequires:  pkgconfig(zlib)
 
 %description
 Dvgrab is a small utility that grabs AVI-2 video from a DV camera using the
