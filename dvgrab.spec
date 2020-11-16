@@ -1,7 +1,9 @@
+%global build_ldflags %{build_ldflags} -lz
+
 Summary:	DV grabber through the FireWire interface
 Name:		dvgrab
 Version:	3.5
-Release:	17
+Release:	18
 License:	GPLv2+
 Group:		Video
 Url:		http://www.kinodv.org/
