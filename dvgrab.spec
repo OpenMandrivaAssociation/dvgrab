@@ -1,7 +1,7 @@
 Summary:	DV grabber through the FireWire interface
 Name:		dvgrab
 Version:	3.5
-Release:	18
+Release:	19
 License:	GPLv2+
 Group:		Video
 Url:		http://www.kinodv.org/
@@ -35,5 +35,4 @@ autoreconf -fi
 %files
 %doc AUTHORS ChangeLog README TODO
 %{_bindir}/*
-%{_mandir}/man1/*
-
+%doc %{_mandir}/man1/*
