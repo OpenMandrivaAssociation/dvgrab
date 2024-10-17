@@ -4,7 +4,7 @@ Version:	3.5
 Release:	20
 License:	GPLv2+
 Group:		Video
-Url:		http://www.kinodv.org/
+Url:		https://www.kinodv.org/
 Source0:	http://prdownloads.sourceforge.net/kino/%{name}-%{version}.tar.gz
 # https://github.com/ddennedy/dvgrab/commit/8dd729f2cf4cc5b99ad2e3961419cf71d2dfb843.patch
 Patch0:  dvgrab-gcc6.patch
