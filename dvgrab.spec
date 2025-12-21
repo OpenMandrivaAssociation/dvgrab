@@ -8,6 +8,11 @@ Url:		https://www.kinodv.org/
 Source0:	http://prdownloads.sourceforge.net/kino/%{name}-%{version}.tar.gz
 # https://github.com/ddennedy/dvgrab/commit/8dd729f2cf4cc5b99ad2e3961419cf71d2dfb843.patch
 Patch0:  dvgrab-gcc6.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	jpeg-devel
 BuildRequires:	pkgconfig(libavc1394)
 BuildRequires:	pkgconfig(libdv)
